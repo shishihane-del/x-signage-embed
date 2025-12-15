@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>X Timeline Embed for Signage</title>
+    <style>
+        body {
+            /* 背景をサイネージに合わせて調整 */
+            background-color: #f0f0f0; 
+            margin: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <a class="twitter-timeline" 
+        data-lang="ja" 
+        data-height="800" 
+        data-theme="light"
+        data-chrome="nofooter" 
+        href="https://twitter.com/@keyaki_noshita
+?ref_src=twsrc%5Etfw">
+        @keyaki_noshita
+ の投稿
+    </a> 
+    
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</body>
+</html>
