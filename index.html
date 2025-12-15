@@ -2,25 +2,53 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>X Embed Direct Link</title>
+    <title>X Profile Image for Signage</title>
     <style>
         body {
             margin: 0;
-            padding: 0;
-            /* 背景は白に設定 */
-            background-color: white; 
-            overflow: hidden; /* スクロールバー非表示 */
+            padding: 20px;
+            background-color: #f0f0f0; 
+            text-align: center;
+            font-family: sans-serif;
         }
-        iframe {
+        .profile-container {
+            margin-top: 50px;
+        }
+        .profile-image {
+            width: 300px; /* 画像のサイズを調整 */
+            height: 300px; /* 画像のサイズを調整 */
+            border-radius: 50%; /* 丸く表示 */
+            border: 5px solid #1DA1F2; /* Xのブランドカラー */
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .account-link {
             display: block;
-            border: none;
-            width: 100%;
-            height: 100vh; /* 画面全体を使う */
+            margin-top: 20px;
+            font-size: 24px;
+            color: #1DA1F2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .message {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #333;
         }
     </style>
 </head>
 <body>
-    <iframe src="https://x.com/keyaki_noshita" frameborder="0"></iframe>
-
+    <div class="profile-container">
+        <img class="profile-image" 
+             src="https://unavatar.io/twitter/keyaki_noshita" 
+             alt="@keyaki_noshita のプロフィール画像">
+        
+        <a class="account-link" href="https://twitter.com/keyaki_noshita" target="_blank">
+            @keyaki_noshita
+        </a>
+        
+        <p class="message">最新の情報はアカウントをご覧ください。</p>
+        
+    </div>
 </body>
 </html>
